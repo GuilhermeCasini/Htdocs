@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento - FlexBox</title>
+</head>
+<style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        width: 100vw;
+        height: 100vh;
+        background-color: antiquewhite;
+    }
+    .all{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: brown;
+        color: white;
+    }
+    .flex{
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .gap{
+        gap: 10px;
+    }
+    .center-hv{
+        justify-content: center;
+        align-items: center;
+        /* align-self: center; */
+    }
+    .space-uniforme{
+        justify-content: space-between;
+
+    }
+    .space-uniforme-margin{
+        justify-content: space-around;
+
+    }
+    .flex-fim{
+        /* align-items: flex-end; */
+        justify-content: flex-end;
+    }
+    .flex-fim-lateral-direita{
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .flex-fim-lateral-esquerda{
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+</style>
+<body>
+    <main class="flex gap flex-fim">
+        <div class="all flex center-hv">1</div>
+        <div class="all flex center-hv">2</div>
+        <div class="all flex center-hv">3</div>
+    </main>
+</body>
+</html>
