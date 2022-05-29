@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ft/css/panel.css">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="./ft/javascript/panel.js" defer></script>
+    <title>Painel - FlashJS</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="painel">
+
+            <li id="lateralCLi" class="menu" data-menu="mcli"><span class="material-symbols-outlined"> group_add</span>
+                <a href="#">Clientes</a>
+            </li>
+
+            <li id="lateralProd" class="menu" data-menu="mprod"> <span class="material-symbols-outlined">
+                    shopping_bag</span>
+                <a href="#">Produtos</a>
+            </li>
+
+            <li id="lateralPed" class="menu" data-menu="mped"><span class="material-symbols-outlined"> shopping_cart
+                </span>
+                <a href="#">Pedidos</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="form" id="mcli">
+            <header class="flex div1 close">
+                <h1 class="titulo">Clientes</h1>
+                <span id="x" class="x" type="button">x</span>
+            </header>
+            <form action="" id="Cli" class="formstyle">
+                <label class="flex l1">Código</label>
+                <input class="flex in1" type="text" value="" disabled>
+                <label class="flex l1">Nome</label>
+                <input class="flex in1" value="" type="text">
+                <label class="flex l1">Data Cadastro</label>
+                <input class="flex in1" type="text" disabled>
+                <section class="flex bot">
+                    <div class="flex bte">
+                        <input class="flex botao anterior" type="button" value="<">
+                        <input class="flex botao proximo" type="button" value=">">
+                    </div>
+                    <div class="flex btd">
+                        <input class="flex botao novo" type="button" value="Novo">
+                        <input class="flex botao salvar" type="button" value="Salvar">
+                    </div>
+                </section>
+            </form>
+        </section>
+
+        <section class="form" id="mprod">
+            <header class="flex dv2 close">
+                <h1 class="titulopd">Produtos</h1>
+                <span id="x" class="x" type="button">x</span>
+            </header>
+            <form action="" id="Pd" class="formstyle">
+
+                <label class="flex l2">Código</label>
+                <input class="flex i2" type="text" value="" disabled>
+                <label class="flex l2">Descrição</label>
+                <input class="flex i2" type="text">
+                <label class="flex l2">Preço</label>
+                <input class="flex i2" type="text">
+                <label class="flex l2">Quantidade</label>
+                <input class="flex i2" type="text">
+                <section class="flex bot2">
+                    <div class="flex bte">
+                        <input class="flex botao anterior" type="button" value="<">
+                        <input class="flex botao proximo" type="button" value=">">
+                    </div>
+                    <div class="flex btd">
+                        <input class="flex botao novo" type="button" value="Novo">
+                        <input class="flex botao salvar" type="button" value="Salvar">
+                    </div>
+                </section>
+            </form>
+        </section>
+
+        <section class="form" id="mped">
+            <header class="flex dv2 close">
+                <h1 class="tituloh1">Pedidos</h1>
+                <span id="x" class="x2" type="button">x</span>
+            </header>
+            <form action="" id="">
+                <label class="l3">Código do Cliente</label>
+                <input class="i3" type="number" id="codigo" />
+
+                <label class="l3">Cliente</label>
+                <input class="i3" type="text" id="ncliente" disabled />
+                <hr>
+                <label class="titulo2">Localizar Produtos</label>
+                <fieldset>
+                    <input class="infield" type="number" id="item" required />
+                    <input class="infield" type="text" id="desc" disabled />
+                    <input class="infield" type="text" id="prc" disabled />
+                    <input class="infield" type="text" id="quant" required />
+                    <input class="bt3" type="button" value="Lançar no Pedido">
+                </fieldset>
+                <hr>
+            </form>
+            <h3 class="titulo2">Itens do Pedido</h3>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Qtd</th>
+                    <th>Sub Total</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>teste</td>
+                    <td>1.00</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+
+            </table>
+        </section>
+    </main>
+
+</body>
+
+</html>
